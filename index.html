@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <header class="header">
+      <div class="container">
+        <img src="/images/📝Notes.svg" alt="Logo" />
+        <div class="notes-count">
+          <img src="/images/icons/notes.svg" alt="" />
+          <p>Всего заметок: <span id="count"></span></p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form class="note-form" name="notes">
+          <!-- Ваш код (done)-->
+          <div class="note-name">
+            <label for="name">Название заметки</label>
+            <input
+              type="text"
+              name="name"
+              id=""
+              placeholder="Напишите название новой заметки..."
+              class="input"
+            />
+          </div>
+
+          <div class="form-flex">
+            <div class="note-description">
+              <label for="note">Описание новой заметки</label>
+              <textarea
+                name="note"
+                id=""
+                placeholder="Напишите описание новой заметки..."
+              ></textarea>
+            </div>
+
+            <div class="colors-n-button">
+              <fieldset class="fieldset">
+                <legend class="label">Выберите цвет заметки</legend>
+                <ul class="radio-list">
+                  <li>
+                    <input
+                      checked
+                      class="radio"
+                      type="radio"
+                      name="color"
+                      value="yellow"
+                      aria-label="yellow"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="color"
+                      value="red"
+                      aria-label="red"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="color"
+                      value="green"
+                      aria-label="green"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="color"
+                      value="blue"
+                      aria-label="blue"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="color"
+                      value="purple"
+                      aria-label="purple"
+                    />
+                  </li>
+                </ul>
+              </fieldset>
+
+              <button class="add-button">
+                <img src="/images/icons/plus-svgrepo-com 1.svg" alt="" />
+                Добавить заметку
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <div class="filter-box">
+          <!-- Ваш код -->
+          <input type="checkbox" name="" id="" />
+          <p>Показать только избранные заметки</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="notes-list">
+          <!-- Сюда будут рендериться заметки из JavaScript -->
+          <!-- <li>
+            <div class="note-head">
+              <h3></h3>
+              <div class="note-buttons">
+                <input type="checkbox" name="" id="" class='like-icon icon'/>
+                <img src="/images/icons/trash.svg" alt="" class='delete'>
+              </div>
+            </div>
+
+            <p></p>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="messages-box">
+        <!-- Сюда будут рендерится информационные сообщения из JavaScript -->
+        <!-- <div class="message">
+          <img src="/images/icons/Done.svg" alt="" />
+          <p>Заметка добавлена!</p>
+        </div> -->
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
