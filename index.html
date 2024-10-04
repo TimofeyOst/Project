@@ -38,6 +38,7 @@
               id=""
               placeholder="Напишите название новой заметки..."
               class="input"
+              onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';"
             />
           </div>
 
@@ -116,7 +117,7 @@
       <div class="container">
         <div class="filter-box">
           <!-- Ваш код -->
-          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id="" class="show-liked"/>
           <p>Показать только избранные заметки</p>
         </div>
       </div>
