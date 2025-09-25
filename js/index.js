@@ -156,7 +156,7 @@ const view = {
     const messagesBox = document.querySelector(".messages-box");
 
     messagesBox.style.display = "flex";
-    messagesBox.innerHTML = `<img src="/images/icons/Done.svg" alt="" /><p>${message}</p>`;
+    messagesBox.innerHTML = `<img src="./images/icons/Done.svg" alt="" /><p>${message}</p>`;
 
     messagesBox.className = `messages-box ${messageClass}`;
 
@@ -181,7 +181,7 @@ const view = {
         <div class="note-buttons">
         
         <button class='like-icon ${element.isFavorite ? 'liked' : 'not-liked'}'></button>
-        <img src="/images/icons/trash.svg" alt="" class='delete icon'>
+        <img src="./images/icons/trash.svg" alt="" class='delete icon'>
         </div></div>
         <p>${element.content}</p>
         </li>`;
